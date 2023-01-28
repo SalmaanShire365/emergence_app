@@ -42,17 +42,17 @@ TABLE OF CONTENT
     |
     ------------------------------------------------------------*/
   
-    --ui-color-brand: #353535;
+    --ui-color-brand: #BFA181;
   
     /* COLOR PALETTE */
   
-    --ui-color-n-000: #fff;
-    --ui-color-n-050: #f5f5f5;
-    --ui-color-n-100: #ebebeb;
-    --ui-color-n-300: #aeaeae;
-    --ui-color-n-500: #353535;
-    --ui-color-n-700: #282828;
-    --ui-color-n-900: #1a1a1a;
+    --ui-color-n-000: #0A1828;
+    --ui-color-n-050: #178582;
+    --ui-color-n-100: #0A1828;
+    --ui-color-n-300: #BFA181;
+    --ui-color-n-500: #BFA181
+    --ui-color-n-700: #178582;
+    --ui-color-n-900: #178582;
   
     /* BACKGROUND COLOR */
     
