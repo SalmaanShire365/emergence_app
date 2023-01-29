@@ -50,7 +50,7 @@ TABLE OF CONTENT
     --ui-color-n-050: #178582;
     --ui-color-n-100: #0A1828;
     --ui-color-n-300: #BFA181;
-    --ui-color-n-500: #BFA181
+    --ui-color-n-500: #BFA181;
     --ui-color-n-700: #178582;
     --ui-color-n-900: #178582;
   
@@ -131,7 +131,7 @@ TABLE OF CONTENT
   2.0 FOUNDATION
   --------------------------------------------------------------*/
   
-  html { box-sizing: border-box; }
+  html { box-sizing: content-box; }
   
   *,
   *:before,
