@@ -155,7 +155,7 @@ TABLE OF CONTENT
   --------------------------------------------------------------*/
   
   a {
-    color: var(--ui-color-brand);
+    color: var();
     text-decoration-color: var();
   }
   
@@ -166,7 +166,7 @@ TABLE OF CONTENT
   
   h1,
   h2 {
-    color: var(--ui-color-typography-heading);
+    color: var();
     margin-bottom: var(--ui-typography-margin-heading);
   }
   
@@ -413,33 +413,16 @@ TABLE OF CONTENT
   
   /* MENU */
   
-  .ui-section-header--nav {
+  .navbar {
     background-color: var();
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.05);
-    flex-direction: column;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.05); 
     gap: var(--ui-gap-header);
-    left: 0;
-    opacity: 0;
-    padding: 7.375rem var(--ui-layout-container) 5rem;
-    position: absolute;
-    right: 0;
-    top: -1rem;
-    transition: all 250ms cubic-bezier(.785, .135, .15, .86);
-    visibility: hidden;
+    
   }
+
   
-  #ui-section-header--menu-id:checked ~
-  .ui-section-header--nav {
-    opacity: 1;
-    top: 0;
-    visibility: visible;
-  }
   
-  .ui-section-header--nav-link {
-    font-size: var(--ui-typography-h3);
-    padding: .5rem;
-    text-decoration: none;
-  }
+    
   
   /*--------------------------------------------------------------
   |
@@ -746,7 +729,7 @@ TABLE OF CONTENT
   
     /* NAV */
   
-    .ui-section-header--nav {
+    .navbar {
       background-color: transparent;
       box-shadow: none;
       flex-direction: row;
@@ -756,7 +739,7 @@ TABLE OF CONTENT
       visibility: visible;
     }
     
-    .ui-section-header--nav-link {
+    .nav-link {
       font-size: var(--ui-typography-p);
       padding: 0;
     }
