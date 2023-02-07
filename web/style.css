@@ -42,17 +42,17 @@ TABLE OF CONTENT
     |
     ------------------------------------------------------------*/
   
-    --ui-color-brand: #BFA181;
-  
-    /* COLOR PALETTE */
-  
-    --ui-color-n-000: #0A1828;
-    --ui-color-n-050: #178582;
-    --ui-color-n-100: #0A1828;
-    --ui-color-n-300: #BFA181;
-    --ui-color-n-500: #BFA181;
-    --ui-color-n-700: #178582;
-    --ui-color-n-900: #178582;
+   --ui-color-brand: ;
+
+  /* COLOR PALETTE */
+
+  --ui-color-n-000: #9D0208;
+  --ui-color-n-050: #f5f5f5;
+  --ui-color-n-100: #D00000;
+  --ui-color-n-300: #f5f5f5;
+  --ui-color-n-500: #6A040F;
+  --ui-color-n-700: #370617;
+  --ui-color-n-900: #03071E;
   
     /* BACKGROUND COLOR */
     
@@ -131,15 +131,15 @@ TABLE OF CONTENT
   2.0 FOUNDATION
   --------------------------------------------------------------*/
   
-  html { box-sizing: content-box; }
+  html { box-sizing: border-box; }
   
   *,
   *:before,
   *:after { box-sizing: inherit; }
   
   body {
-    background-color: var(--ui-color-background-primary);
-    color: var(--ui-color-typography-body);
+    background-color: var();
+    color: var();
     font-family: var(--ui-typography-typeface);
     font-feature-settings: "liga", "kern";
     font-size: var(--ui-typography-p);
@@ -155,8 +155,8 @@ TABLE OF CONTENT
   --------------------------------------------------------------*/
   
   a {
-    color: var(--ui-color-brand);
-    text-decoration-color: var(--ui-color-typography-note);
+    color: var();
+    text-decoration-color: var();
   }
   
   h1,
@@ -166,7 +166,7 @@ TABLE OF CONTENT
   
   h1,
   h2 {
-    color: var(--ui-color-typography-heading);
+    color: var();
     margin-bottom: var(--ui-typography-margin-heading);
   }
   
@@ -193,7 +193,7 @@ TABLE OF CONTENT
   small { font-size: var(--ui-typography-s); }
   
   .ui-text-note {
-    color: var(--ui-color-typography-note);
+    color: var();
     line-height: 1;
   }
   
@@ -250,7 +250,7 @@ TABLE OF CONTENT
   --------------------------------------------------------------*/
   
   .ui-component-button {
-    border: .0625rem solid var(--ui-color-brand);
+    border: .0625rem solid var();
     border-radius: var(--ui-radius-button);
     display: block;
     font-weight: 700;
@@ -260,13 +260,13 @@ TABLE OF CONTENT
   }
   
   .ui-component-button-primary {
-    background-color: var(--ui-color-brand);
-    color: var(--ui-color-typography-button);
+    background-color: var();
+    color: var();
   }
   
   .ui-component-button-secondary {
-    background-color: var(--ui-color-background-primary);
-    color: var(--ui-color-brand);
+    background-color: var();
+    color: var();
   }
   
   .ui-component-button-big,
@@ -285,9 +285,9 @@ TABLE OF CONTENT
   input[name="toggle"] { display: none; }
   
   .ui-component-toggle {
-    background-color: var(--ui-color-background-tertiary);
+    background-color: var();
     border-radius: var(--ui-radius-button);
-    color: var(--ui-color-typography-note);
+    color: var();
     font-size: var(--ui-typography-s);
     font-weight: 700;
     line-height: 1;
@@ -306,8 +306,8 @@ TABLE OF CONTENT
   div label[for=ui-component-toggle__monthly],
   #ui-component-toggle__yearly:checked ~
   div label[for=ui-component-toggle__yearly] {
-    background-color: var(--ui-color-background-primary);
-    color: var(--ui-color-typography-body);
+    background-color: var();
+    color: var();
   }
   
   /*--------------------------------------------------------------
@@ -317,7 +317,7 @@ TABLE OF CONTENT
   --------------------------------------------------------------*/
   
   .ui-component-card {
-    border: .0625rem solid var(--ui-color-border);
+    border: .0625rem solid var();
     border-radius: var(--ui-radius-card);
     overflow: hidden;
     width: 100%;
@@ -388,7 +388,7 @@ TABLE OF CONTENT
   
   .ui-section-header--menu-icon::before,
   .ui-section-header--menu-icon::after {
-    background: var(--ui-color-brand);
+    background: var();
     content: "";
     height: .125rem;
     left: 0;
@@ -413,33 +413,16 @@ TABLE OF CONTENT
   
   /* MENU */
   
-  .ui-section-header--nav {
-    background-color: var(--ui-color-background-primary);
-    box-shadow: 0 .5rem 1rem rgba(0,0,0,.05);
-    flex-direction: column;
+  .navbar {
+    background-color: var();
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.05); 
     gap: var(--ui-gap-header);
-    left: 0;
-    opacity: 0;
-    padding: 7.375rem var(--ui-layout-container) 5rem;
-    position: absolute;
-    right: 0;
-    top: -1rem;
-    transition: all 250ms cubic-bezier(.785, .135, .15, .86);
-    visibility: hidden;
+    
   }
+
   
-  #ui-section-header--menu-id:checked ~
-  .ui-section-header--nav {
-    opacity: 1;
-    top: 0;
-    visibility: visible;
-  }
   
-  .ui-section-header--nav-link {
-    font-size: var(--ui-typography-h3);
-    padding: .5rem;
-    text-decoration: none;
-  }
+    
   
   /*--------------------------------------------------------------
   |
@@ -448,6 +431,7 @@ TABLE OF CONTENT
   --------------------------------------------------------------*/
   
   .ui-section-hero {
+    background-color: var();
     padding-bottom: 5rem;
     padding-top: 5rem;
     text-align: center;
@@ -501,7 +485,7 @@ TABLE OF CONTENT
   --------------------------------------------------------------*/
   
   .ui-section-pricing {
-    background-color: var(--ui-color-background-secondary);
+    background-color: var();
     padding-bottom: 5rem;
     padding-top: 5rem;
     text-align: center;
@@ -517,7 +501,7 @@ TABLE OF CONTENT
   /* CARD */
   
   .ui-component-card--pricing {
-    background-color: var(--ui-color-background-primary);
+    background-color: var();
     padding: 1.5rem 1.5rem 1.75rem;
     text-align: left;
   }
@@ -593,7 +577,7 @@ TABLE OF CONTENT
   --------------------------------------------------------------*/
   
   .ui-section-close {
-    background-color: var(--ui-color-background-secondary);
+    background-color: var();
     padding-bottom: 5rem;
     padding-top: 5rem;
     text-align: center;
@@ -745,7 +729,7 @@ TABLE OF CONTENT
   
     /* NAV */
   
-    .ui-section-header--nav {
+    .navbar {
       background-color: transparent;
       box-shadow: none;
       flex-direction: row;
@@ -755,7 +739,7 @@ TABLE OF CONTENT
       visibility: visible;
     }
     
-    .ui-section-header--nav-link {
+    .nav-link {
       font-size: var(--ui-typography-p);
       padding: 0;
     }
