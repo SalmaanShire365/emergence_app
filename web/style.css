@@ -1,10 +1,10 @@
 /* Color Palette */
 :root {
-  --primary-color: #007bff;    /* Primary color */
-  --secondary-color: #6c757d;  /* Secondary color */
-  --accent-color: #17a2b8;     /* Accent color */
-  --text-color: #333;          /* Text color */
-  --background-color: #f5f5f5; /* Background color */
+  --primary-color: #0A1828;    /* Primary color */
+  --secondary-color: #178582;  /* Secondary color */
+    --accent-color: #BFA181;     /* Accent color */
+    --text-color:#178582 ;          /* Text color */
+  --background-color: #2F5C8F; /* Background color */
 }
 /* Global Styles */
 body {
@@ -21,19 +21,18 @@ body {
 
 /* Header Section */
 .ui-section-header {
-  background-color:;
-  color:;
+  background-color:var(--primary-color);
   padding: 20px;
 }
 
 .ui-section-header .navbar-brand {
-  color: #fff;
+  color:var(--secondary-color);
   font-size: 24px;
   font-weight: bold;
 }
 
 .ui-section-header .navbar-nav .nav-link {
-  color: #fff;
+  color:var(--secondary-color);
 }
 
 .ui-section-header .form-control {
@@ -46,7 +45,8 @@ body {
 
 /* Hero Section */
 .ui-section-hero {
-  background-color: #f5f5f5;
+  background-color:var(--primary-color);
+  color:var(--accent-color);
   padding: 40px 0;
   text-align: center;
 }
@@ -62,14 +62,15 @@ body {
 }
 
 .ui-section-hero .btn-primary {
-  background-color: #333;
-  border-color: #333;
+  background-color:var(--secondary-color);
+  border-color:var(--secondary-color);
 }
 
 /* Features Section */
 .ui-section-features {
+  background-color:var(--primary-color);
+  color: var(--accent-color);
   padding: 40px 0;
-  background-color: #fff;
 }
 
 .ui-section-features h2 {
@@ -93,7 +94,8 @@ body {
 
 /* Pricing Section */
 .ui-section-pricing {
-  background-color: #f5f5f5;
+  background-color:var(--primary-color);
+  color:var(--accent-color);
   padding: 40px 0;
 }
 
@@ -117,14 +119,15 @@ body {
 }
 
 .ui-section-pricing .btn-primary {
-  background-color: #333;
-  border-color: #333;
+  background-color:var(secondary-color);
+  border-color:var(secondary-color);
 }
 
 /* Testimonials Section */
 .ui-section-testimonials {
   padding: 40px 0;
-  background-color: #fff;
+  background-color:var(--primary-color);
+  color:var(--accent-color);
 }
 
 .ui-section-testimonials h2 {
@@ -145,13 +148,14 @@ body {
 }
 
 .ui-section-testimonials .blockquote-footer {
+  color:var(--secondary-color);
   font-weight: bold;
 }
 
 /* Footer Section */
 .ui-section-footer {
-  background-color: #333;
-  color: #fff;
+  background-color:var(--primary-color);
+  color:var(--accent-color);
   padding: 20px;
   text-align: center;
 }
